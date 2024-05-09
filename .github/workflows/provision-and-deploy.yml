@@ -1,5 +1,6 @@
 name: 'Provision EKS and Deploy Juice Shop'
 on:
+  workflow_dispatch:
   push:
     branches:
     - master
