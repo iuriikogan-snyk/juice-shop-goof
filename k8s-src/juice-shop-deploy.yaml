@@ -1,7 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: snyk-juice-shop
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: snyk-juice-shop
+  namespace: snyk-juice-shop
   labels:
     app: snyk-juice-shop
 spec:
